@@ -11,7 +11,7 @@ using System.Web.Http;
 
 namespace CodeTest_Test
 {
-    public class Tests
+    public class AccountPaymentDetailsTest
     {
         [SetUp]
         public void Setup()

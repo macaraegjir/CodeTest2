@@ -28,8 +28,8 @@ namespace CodeTest.DataAccess
                             where b.AccountNo == AccountNo
                             select b;
 
-                //result = query.CopyToDataTable(DataRow);
-
+                
+                //put data into AccountDetailModel
                 foreach (var item in query)
                 {
                     PaymentDetailModel PymtModel = new PaymentDetailModel();

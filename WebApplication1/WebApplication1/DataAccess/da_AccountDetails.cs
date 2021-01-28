@@ -48,10 +48,14 @@ namespace CodeTest.DataAccess
                                                     where b.AccountNo == AccountNo
                                                     select b;
 
-                //result = query.CopyToDataTable(DataRow);
+                //put data into AccountDetailModel
+                if (query == null)
+                {
+                    error.throwError("AccountNo does not exist", "AccountNo not found", HttpStatusCode.NotFound);
+                }
                 var account = query.FirstOrDefault<AccountDetails>();
 
-                if (account.AccountNo != null && account.AccountNo != string.Empty)
+                if (account != null && account.AccountNo != string.Empty)
                 {
                     acctModel.AccountNo = account.AccountNo;
                     acctModel.Status = account.Status;

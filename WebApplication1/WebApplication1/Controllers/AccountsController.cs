@@ -15,10 +15,11 @@ namespace CodeTest.Controllers
 
         
         [Route("api/accounts/GetAccountPaymentDetails/{id}")]
-        public AccountDetailModel Get(string id)
+        public AccountDetailModel GetAccountPaymentDetails(string id)
         {
             
                 AccountPaymentDetails details = new AccountPaymentDetails();
+                //will populate database on first run
                 details.fillData();
                 //check input format
                 details.checkInputFormat(id);
