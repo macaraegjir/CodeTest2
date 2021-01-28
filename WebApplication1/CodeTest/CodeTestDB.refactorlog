@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="bd7c9f8f-b91e-41cd-9b66-1f4e62ff95da" ChangeDateTime="01/26/2021 05:55:38">
+    <Property Name="ElementName" Value="[dbo].[AccountDetails].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[AccountDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AccountNo" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a50033c5-5cc3-4081-8afa-dcf0fa76bec5" ChangeDateTime="01/26/2021 05:56:54">
+    <Property Name="ElementName" Value="[dbo].[PaymentDetails].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PaymentDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AccountNo" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4da1ec28-187b-4b05-ae59-a22dd6689e3c" ChangeDateTime="01/26/2021 05:59:02">
+    <Property Name="ElementName" Value="[dbo].[PaymentDetails].[AccountNo]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PaymentDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PaymentID" />
+  </Operation>
+</Operations>
